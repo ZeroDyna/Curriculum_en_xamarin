@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <!-- Encabezado -->
+        <StackLayout BackgroundColor="LightGray" Padding="10">
+            <Image Source="https://github.com/ZeroDyna/Desarrollo/raw/main/formulario/foto.jpeg" HeightRequest="120" WidthRequest="120" Aspect="AspectFit" />
+            <Label Text="Renato Oscar Corrales Peña" FontAttributes="Bold" />
+            <Label Text="Estudiante" />
+        </StackLayout>
+
+        <!-- Información de contacto -->
+        <StackLayout>
+            <Label Text="Contacto" FontAttributes="Bold" />
+            <StackLayout>
+                <Image Source="App1.Resources.R.png" HeightRequest="20" WidthRequest="20" />
+                <Label Text="965990510" />
+            </StackLayout>
+            <StackLayout>
+                <Image Source="C.png" HeightRequest="20" WidthRequest="20" />
+                <Label Text="renato.corrales@ucsp.edu.pe" />
+            </StackLayout>
+            <StackLayout>
+                <Image Source="U.png" HeightRequest="20" WidthRequest="20" />
+                <Label Text="Arequipa Perú" />
+            </StackLayout>
+            <StackLayout>
+                <Image Source="L.png" HeightRequest="20" WidthRequest="20" />
+                <Label Text="linkedin.com/renato-corrales" />
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Idiomas -->
+        <StackLayout>
+            <Label Text="Idiomas" FontAttributes="Bold" />
+            <Label Text="Español: nativo" />
+            <Label Text="Ingles Bilingue(Toefl jr)" />
+            <Label Text="Portugues principiante" />
+        </StackLayout>
+
+        <!-- Aptitudes -->
+        <StackLayout>
+            <Label Text="Aptitudes" FontAttributes="Bold" />
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Inteligencia emocional</x:String>
+                        <x:String>Espiritu critico</x:String>
+                        <x:String>Trabajo en equipo</x:String>
+                        <x:String>Capacidad analitica</x:String>
+                        <x:String>Liderazgo</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+
+        <!-- Habilidades -->
+        <StackLayout>
+            <Label Text="Habilidades" FontAttributes="Bold" />
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Acondicionamiento fisico</x:String>
+                        <x:String>Creacion de videos</x:String>
+                        <x:String>Pack office</x:String>
+                        <x:String>Tenis de mesa</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+
+        <!-- Otros Intereses -->
+        <StackLayout>
+            <Label Text="Otros Intereses" FontAttributes="Bold" />
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Resolver cubo de rubik</x:String>
+                        <x:String>Creacion de videojuegos</x:String>
+                        <x:String>Lecturas grupales</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+
+        <!-- Perfil y Experiencia Laboral -->
+        <StackLayout>
+            <Label Text="Perfil" FontAttributes="Bold" />
+            <Label Text="Soy un estudiante comprometido y entusiasta..." />
+
+            <Label Text="Experiencia Laboral" FontAttributes="Bold" />
+            <Label Text="Experiencia de Voluntariado y Servicio a la Comunidad." />
+        </StackLayout>
+
+        <!-- Formación -->
+        <StackLayout>
+            <Label Text="Formación" FontAttributes="Bold" />
+            <StackLayout>
+                <Label Text="Universidad Católica San Pablo (UCSP)" FontAttributes="Bold" />
+                <Label Text="Ciencias de la Computación" />
+                <Label Text="Fecha de inicio: 2022 - En curso" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Extreme Learning Center (ELC)" FontAttributes="Bold" />
+                <Label Text="Programa de Estudios en Inglés" />
+                <Label Text="Fecha de finalización: Marzo de 2022" />
+                <Label Text="Ubicación: Peru" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Colegio Santa Clara" FontAttributes="Bold" />
+                <Label Text="Nivel: Secundaria" />
+                <Label Text="Fecha de graduación: 2021" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
