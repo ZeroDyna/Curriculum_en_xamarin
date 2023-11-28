@@ -35,3 +35,10 @@
 
    ```xml
    xmlns:local="clr-namespace:App1"
+
+6. **Ejecucion**
+![1](https://github.com/ZeroDyna/Formulario_xamarin/blob/main/curr_0%20(1).png?raw=true)
+
+![2](https://github.com/ZeroDyna/Formulario_xamarin/blob/main/curr_0%20(2).png?raw=true)
+
+
